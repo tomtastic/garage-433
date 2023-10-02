@@ -1,0 +1,12 @@
+[Unit]
+Description=Garage Opener Frontend
+[Install]
+WantedBy=multi-user.target
+[Service]
+Type=simple
+User=pi
+PermissionsStartOnly=true
+WorkingDirectory=/home/pi/Garage
+ExecStart=/usr/bin/authbind /usr/bin/python3 /home/pi/Garage/garage.py
+Restart=on-failure
+TimeoutSec=600
