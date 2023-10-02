@@ -569,7 +569,7 @@ with Radio(
     spiDevice=0,
 ) as radio:
 
-    separator(label="RFM59 Register Setup", position="begin")
+    separator(label="RFM69 Register Setup", position="begin")
     register_setup(radio)
     CLEAR_TO_SEND = True
 
